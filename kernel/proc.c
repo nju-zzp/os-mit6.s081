@@ -291,6 +291,9 @@ fork(void)
 
   safestrcpy(np->name, p->name, sizeof(p->name));
 
+  // trace mask
+  np->syscallTraceFlag = p->syscallTraceFlag;
+
   pid = np->pid;
 
   np->state = RUNNABLE;

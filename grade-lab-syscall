@@ -24,6 +24,7 @@ def test_trace_all_grep():
     r.match('^\\d+: syscall open -> 3')
     r.match('^\\d+: syscall read -> 1023')
     r.match('^\\d+: syscall read -> 966')
+    r.match('^\\d+: syscall read -> 70')
     r.match('^\\d+: syscall read -> 0')
     r.match('^\\d+: syscall close -> 0')
 
